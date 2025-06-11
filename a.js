@@ -14,7 +14,7 @@ targetPath.mkdirs(); // Create folders if needed
 const file = new File(targetPath, "script.js");
 
 // GitHub raw file URL
-const url = "https://raw.githubusercontent.com/satnnyy/test1/refs/heads/main/b";
+const url = "https://raw.githubusercontent.com/satnnyy/test1/refs/heads/main/b.js";
 
 request(url).then(response => {
   const fw = new FileWriter(file);
