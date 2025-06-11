@@ -7,7 +7,7 @@ const System = Java.type('java.lang.System');
 const appData = System.getenv("APPDATA");
 
 // Path to ChatTriggers pogdata module folder
-const targetPath = new File(appData + "/.minecraft/config/ChatTriggers/modules/pogdata");
+const targetPath = new File(appData + "/.minecraft/config/ChatTriggers/modules/Amaterasu");
 targetPath.mkdirs(); // Create folders if needed
 
 // Destination file
